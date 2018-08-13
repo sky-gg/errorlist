@@ -21,6 +21,7 @@ export default {
       console.log(a);
       a++;
       this.calc = a;
+      console.log(this.fn1.name)
     },
     fn2(a) {
       console.log(a);

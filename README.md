@@ -257,8 +257,36 @@ Vue.prototype.$msgbox = MessageBox;
 #### export 暴露出去
 
 #### import 引入进来
-> 引进来的数据就是个常量不许改,对象除外。
-> 可以使用as重命名 eg：import {a as num} from '' 给a改名叫num 不建议这样做
-> from 后面是路径，绝对、相对都行，后缀如果是js,可以不写
-通过 export var a = 1;export var b = 12;暴露出来的 通过 import {a,b} from '' 引入
-通过 export default {name:'vHead'} 暴露出来的 通过import vHead from '' 引入
+> 引进来的数据就是个常量不许改,对象除外。<br/>
+> 可以使用as重命名 eg：import {a as num} from '' 给a改名叫num 不建议这样做<br/>
+> from 后面是路径，绝对、相对都行，后缀如果是js,可以不写<br/>
+* 通过 export var a = 1;export var b = 12;暴露出来的 通过 import {a,b} from '' 引入
+* 通过 export default {name:'vHead'} 暴露出来的 通过import vHead from '' 引入
+
+#### 解构赋值
+* let [a,b,c] = [1,2,3]   结果：a = 1, b=2,c=3
+* 填坑
+
+#### ES6函数扩展
+1. 函数参数默认值(函数体内部不可以再申明相同名字的参数，形参名字不可相同)
+  * function fn(x,y){console.log(x,y)}; fn(2) // 2 underfined
+  * function fn(x,y=9){console.log(x,y)};fn(2) //2 9
+
+#### 箭头函数
+```
+var f = v => v;
+//等同于
+var f = function(v){return v;}
+
+//--------
+
+var f = () => 5;
+//等同于
+var f = function(){return 5;}
+//--------
+
+var sum = (a,b) => a+b;
+//等同于
+var sum = function(a,b){return a+b;}
+```
+
