@@ -1,4 +1,4 @@
-# kiss
+# try my best for a good day
 
 > A Vue.js project
 
