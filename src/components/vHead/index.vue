@@ -4,15 +4,22 @@
       <div class="box1">左</div>
       <div class="box2">右</div>
     </header>
-    <div class="box">
-      <input type="text"
-             v-model="calc">
-      <button @click="numadd">加1</button>
-      <button @click="minus">减1</button>
+    <div class="calcbox">
+      <el-input type="number"
+                v-model="calc"></el-input>
+      <el-button type='primary'
+                 @click="numadd">加1</el-button>
+      <el-button type='primary'
+                 @click="minus">减1</el-button>
     </div>
   </div>
 </template>
 <script>
+import Vue from "vue";
+import { Input, Button, InputNumber } from "element-ui";
+Vue.use(Input);
+Vue.use(Button);
+Vue.use(InputNumber);
 export default {
   name: "vHeads",
   props: {
@@ -31,28 +38,35 @@ export default {
     minus() {
       this.$emit("minus", this.calc);
     }
+  },
+  watch:{
+    calc:function(){
+      console.log('你变了')
+    }
   }
-  // computed:{
-  //   fn:function(){
-  //     return this.$emit(calc,this.calc)
-  //   }
-  // }
 };
 </script>
 <style lang="less" scoped>
 .v-heads {
   height: 50px;
   width: 100%;
-  .box1.box2 {
-    font-size: 30px;
-    color: #faa;
-    width: 50px;
+  header {
+    .box1.box2 {
+      font-size: 30px;
+      color: #faa;
+      width: 50px;
+    }
+    .box1 {
+      float: left;
+    }
+    .box2 {
+      float: right;
+    }
   }
-  .box1 {
-    float: left;
-  }
-  .box2 {
-    float: right;
+  .calcbox {
+    .el-input {
+      width: 10%;
+    }
   }
 }
 </style>

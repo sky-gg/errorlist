@@ -225,3 +225,40 @@ Vue.prototype.$msgbox = MessageBox;
 11. 沟通
 12. learn English as soon as quickly
 ---
+#### watch属性
+> watch 能直接获取 data和props上的数据，当数据发生变化时，该函数会执行。其后是一个对象或数组。禁止在watch中使用箭头函数
+```
+  watch:{
+    a:function(new,old){
+      console.log('新的'+new,'旧的'+old);
+      console.log('a was changed')
+    },
+    //方法
+    b:numAdd;
+    //深度监听
+    c:{
+      handler:function(new,old){},
+      deep:true
+    },
+    //该回调将会在侦听开始之后被立即调用
+    d:{
+      handler: function(new,old){},
+      immediate:true
+    },
+    e:[
+      function handle1(new,old){},
+      function handle2(new,old){},
+    ],
+    //监听data1下的a
+    'data1.a':function(new,old){}
+  }
+```
+
+#### export 暴露出去
+
+#### import 引入进来
+> 引进来的数据就是个常量不许改,对象除外。
+> 可以使用as重命名 eg：import {a as num} from '' 给a改名叫num 不建议这样做
+> from 后面是路径，绝对、相对都行，后缀如果是js,可以不写
+通过 export var a = 1;export var b = 12;暴露出来的 通过 import {a,b} from '' 引入
+通过 export default {name:'vHead'} 暴露出来的 通过import vHead from '' 引入
