@@ -26,13 +26,18 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ---
 #### vue-cli 常见问题
 
-1. 组件
-  注册：命名规则 html中：v-head  js中：vHead  html中：v-head-tap  js中：vHeadTap 不这样写会报 <b style='color:red'>'did you register the component correctly'</b>
+1. 组件 注册：命名规则(驼峰)
+  * html中：v-head  
+  * js中：vHead  
+  * html中：v-head-tap  
+  * js中：vHeadTap 
+  > 不这样写会报 <b style='color:red'>'did you register the component correctly'</b>
 
   引入：import vHead from 'com/vHead' components:{vHead}
 
 2. 自定义路径名
-  例如使用@代替src  或者 com 代替 'src/components/' 等 设置地点在 build/webpack.base.conf.js下的module.exports/resolve
+  * 使用@代替src  或者 com 代替 'src/components/' 等
+  * 设置地点在 build/webpack.base.conf.js下的module.exports/resolve
 
 3. less编译
   npm i less less-loader --save-dev 先安装
@@ -45,8 +50,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     ```
 4. 修改过config与build文件夹中的内容后需重新跑一次项目
 ---
-#### 父子组件传参及修改
-父子组件传参 子组件修改父组件数据
+#### 父子组件传参 子组件修改父组件数据
+
   a. 父组件引入子组件并注册
   > <b style='color:red'>先注册再使用</b>
     props:['num'] 记得引号
@@ -54,6 +59,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   html
     <v-heads></v-heads>
   js
+    import vHeads from 'com/vHeads';
     components: {
       vHeads
     }
@@ -81,7 +87,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   d. 子组件使用该数据
   ```
   html
-  <b>{{a}}</b>
+    <b>{{a}}</b>
   ```
   e. 子组件有修改数据的需求 调用自身方法 在方法中使用 "this.$emit('自定义方法名','要传的参数')"传给父组件 例如："this.$emit('fn',this.a)"
   ```
@@ -114,8 +120,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 #### 新技能GET
 1. 不知宽高的物体左右居中（ios独特的bug解决方案）
 ```
-left:50%;
-transform:translate(50%,0)
+  left:50%;
+  transform:translate(50%,0)
 ```
 
 2. 剩余空间自动分配
@@ -177,12 +183,13 @@ transform:translate(50%,0)
 #### git上传本地项目
 1.	pwd查看当前路径
 2.	cd + 本地项目文件地址（将地址栏中的 \换成 / ）
-3.	git init初始化
-4.	git add .添加项目至暂存区（因为gulp中的插件过于庞大，上传时会出错，需将其文件夹名为：node_modules的文件，移出你的项目文件后才能进行添加操作）
-5.	git commit -m “描述”添加至本地版本库
-6.	git remote add origin    github上仓库的地址
-7.	git push origin master推送至远程版本库
-
+3.	git init 初始化
+4.	git add . 添加项目至暂存区
+5.	git commit -m "描述" 添加至本地版本库
+6.	git remote add origin url[url为你github上仓库的地址]
+7.	git push origin master 推送至远程版本库
+---
+8.  git branch -a 查看远程分支
 ---
 #### 拉取仓库项目
 1. 推荐使用sourcetree，傻瓜式操作。
