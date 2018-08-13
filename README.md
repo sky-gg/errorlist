@@ -189,7 +189,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 6.	git remote add origin url[url为你github上仓库的地址]
 7.	git push origin master 推送至远程版本库
 ---
-8.  git branch -a 查看远程分支
+8.  git branch -a 查看远程分支<br/>
 采用下图方式可以省去1.2两步<br/>
 ![dd](src/assets/img/a.png)
 ---
