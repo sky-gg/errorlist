@@ -178,9 +178,9 @@ transform:translate(50%,0)
 1.	pwd查看当前路径
 2.	cd + 本地项目文件地址（将地址栏中的 \换成 / ）
 3.	git init初始化
-4.	git config --global remote.origin.url https://github.com/yourgithubname/xiangmuming.git（github上你新建的项目地址） [^1]
-5.	git add .添加项目至暂存区（因为gulp中的插件过于庞大，上传时会出错，需将其文件夹名为：node_modules的文件，移出你的项目文件后才能进行添加操作）
-6.	git commit -m “描述”添加至本地版本库
+4.	git add .添加项目至暂存区（因为gulp中的插件过于庞大，上传时会出错，需将其文件夹名为：node_modules的文件，移出你的项目文件后才能进行添加操作）
+5.	git commit -m “描述”添加至本地版本库
+6.	git remote add origin    github上仓库的地址
 7.	git push origin master推送至远程版本库
 
 ---
@@ -218,5 +218,3 @@ Vue.prototype.$msgbox = MessageBox;
 11. 沟通
 12. learn English as soon as quickly
 ---
-sourcetree test
-[^1]: 使用过后记得在'C:\Users\Administrator[当前登录系统的账号名]\.gitconfig',删除该项，不然 嘿嘿嘿
