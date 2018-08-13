@@ -190,7 +190,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 7.	git push origin master 推送至远程版本库
 ---
 8.  git branch -a 查看远程分支
-![采用下图方式可以省去1.2两步](src/assets/img/a.png)
+采用下图方式可以省去1.2两步<br/>
+![dd](src/assets/img/a.png)
 ---
 #### 拉取仓库项目
 1. 推荐使用sourcetree，傻瓜式操作。
