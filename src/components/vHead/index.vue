@@ -39,10 +39,29 @@ export default {
       this.$emit("minus", this.calc);
     }
   },
-  watch:{
-    calc:function(){
-      console.log('你变了')
+  watch: {
+    calc: function() {
+      console.log("你变了");
     }
+  },
+  fnd() {
+    this.count = 0;
+    this.timer2 = setInterval(function() {
+      $("#query_ticket").click();
+      this.timer1 = setInterval(function() {
+        count++;
+        this.a =
+          $("#ZY_6i000G292602").attr("class") ||
+          $("#ZY_6j000G634302").attr("class");
+        console.log(this.a);
+        if (a) {
+          console.log("共查询：" + count + "次！");
+          clearInterval(this.timer1);
+          clearInterval(this.timer2);
+          alert("有票，快买");
+        }
+      }, 3999);
+    }, 4000);
   }
 };
 </script>

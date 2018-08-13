@@ -274,19 +274,31 @@ Vue.prototype.$msgbox = MessageBox;
 
 #### 箭头函数
 ```
-var f = v => v;
-//等同于
-var f = function(v){return v;}
-
-//--------
-
-var f = () => 5;
-//等同于
-var f = function(){return 5;}
-//--------
-
-var sum = (a,b) => a+b;
-//等同于
-var sum = function(a,b){return a+b;}
+  var f = v => v;
+  //等同于
+  var f = function(v){return v;}
+  //--------
+  var f = () => 5;
+  //等同于
+  var f = function(){return 5;}
+  //--------
+  var sum = (a,b) => a+b;
+  //等同于
+  var sum = function(a,b){return a+b;}
 ```
+1. 箭头函数与普通函数的区别
+  * this指向
+  * 箭头函数不能new
+  * 箭头函数没有arguments，有rest
 
+```
+  //rest
+  function add(...values) {
+    let sum = 0;
+    for (var val of values) {
+      sum += val;
+    }
+    return sum;
+  }
+  add(2, 5, 3) // 10
+```
