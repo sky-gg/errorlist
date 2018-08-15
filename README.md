@@ -227,6 +227,9 @@ Vue.prototype.$msgbox = MessageBox;
 11. 沟通
 12. learn English as soon as quickly
 ---
+#### 接口常见问题
+* 删除、取消等操作只能执行一次 前后端都要进行限制，
+* 删除时如果该项目下有影响其他项目的东西禁止删除。例如：a项目下有订单产生，则不能删除a
 #### watch属性
 > watch 能直接获取 data和props上的数据，当数据发生变化时，该函数会执行。其后是一个对象或数组。禁止在watch中使用箭头函数
 ```
