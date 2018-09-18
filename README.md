@@ -307,3 +307,7 @@ Vue.prototype.$msgbox = MessageBox;
   }
   add(2, 5, 3) // 10
 ```
+#### npm
+* 查看已安装全局包 `npm list -g --depth 0`
+* nrm 切换npm包源 使用方式：`nrm ls`(查看所有源) `npm use cnpm`(使用淘宝源)
+* nvm 切换node版本 使用方式：`nrm ls`(查看已安装的node版本) `nrm use 4.4.4`(使用node4.4.4)
