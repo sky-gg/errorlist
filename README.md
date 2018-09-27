@@ -33,14 +33,14 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   * js中：vHeadTap 
   > 不这样写会报 <b style='color:red'>'did you register the component correctly'</b>
 
-  引入：import vHead from 'com/vHead' components:{vHead}
+  引入：`import vHead from 'com/vHead' components:{vHead}`
 
 2. 自定义路径名
   * 使用@代替src  或者 com 代替 'src/components/' 等
   * 设置地点在 build/webpack.base.conf.js下的module.exports/resolve
 
 3. less编译
-  npm i less less-loader --save-dev 先安装
+  `npm i less less-loader --save-dev` 先安装
   再去 build/webpack.base.conf.js 下的module/rules 复制追加一份
     ```js
     {
@@ -183,11 +183,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 #### git上传本地项目
 1.	pwd查看当前路径
 2.	cd + 本地项目文件地址（将地址栏中的 \换成 / ）
-3.	git init 初始化
-4.	git add . 添加项目至暂存区
-5.	git commit -m "描述" 添加至本地版本库
-6.	git remote add origin url[url为你github上仓库的地址]
-7.	git push origin master 推送至远程版本库
+3.	`git init `初始化
+4.	`git add . `添加项目至暂存区
+5.	`git commit -m "描述" `添加至本地版本库
+6.	`git remote add origin url`[url为你github上仓库的地址]
+7.	`git push origin master` 推送至远程版本库
 ---
 8.  git branch -a 查看远程分支<br/>
 采用下图方式可以省去1.2两步<br/>
@@ -205,9 +205,9 @@ Vue.use(Button);
 Vue.use(Input);
 ``` 
 * 方法要使用
-Vue.prototype.$msgbox = MessageBox;
+`Vue.prototype.$msgbox = MessageBox;`
 
-* 属性使用 :attribute = ''  方法使用 @change = 'fn'
+* 属性使用 `:attribute = ''` ; 方法使用 `@change = 'fn'`
 * 在单页文件中 scoped 会限制样式只对当前.vue文件有效
 ---
 #### 两个数组合并成一个
@@ -265,17 +265,17 @@ Vue.prototype.$msgbox = MessageBox;
 > 引进来的数据就是个常量不许改,对象除外。<br/>
 > 可以使用as重命名 eg：import {a as num} from '' 给a改名叫num 不建议这样做<br/>
 > from 后面是路径，绝对、相对都行，后缀如果是js,可以不写<br/>
-* 通过 export var a = 1;export var b = 12;暴露出来的 通过 import {a,b} from '' 引入
-* 通过 export default {name:'vHead'} 暴露出来的 通过import vHead from '' 引入
+* 通过 `export var a = 1;export var b = 12;`暴露出来的 通过 `import {a,b} from ''` 引入
+* 通过 `export default {name:'vHead'}` 暴露出来的 通过`import vHead from ''` 引入
 
 #### 解构赋值
-* let [a,b,c] = [1,2,3]   结果：a = 1, b=2,c=3
+* `let [a,b,c] = [1,2,3]`   结果：`a = 1, b=2,c=3`
 * 填坑
 
 #### ES6函数扩展
 1. 函数参数默认值(函数体内部不可以再申明相同名字的参数，形参名字不可相同)
-  * function fn(x,y){console.log(x,y)}; fn(2) // 2 underfined
-  * function fn(x,y=9){console.log(x,y)};fn(2) //2 9
+  * `function fn(x,y){console.log(x,y)}; fn(2) // 2 underfined`
+  * `function fn(x,y=9){console.log(x,y)};fn(2) //2 9`
 
 #### 箭头函数
 ```
