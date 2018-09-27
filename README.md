@@ -313,4 +313,4 @@ Vue.prototype.$msgbox = MessageBox;
 * nvm 切换node版本 使用方式：`nrm ls`(查看已安装的node版本) `nrm use 4.4.4`(使用node4.4.4)
 
 #### 时间戳
-* new Date().getTime() === Date.new()
+* `new Date().getTime() === Date.new()`
