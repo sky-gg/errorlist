@@ -211,7 +211,19 @@ Vue.use(Input);
 * 在单页文件中 scoped 会限制样式只对当前.vue文件有效
 ---
 #### 两个数组合并成一个
-* 使用ES6新方法 ```[...arr1,...arr2]```
+* 使用ES6新方法展开运算符 ```[...arr1,...arr2]//分别将arr1、arr2展开，合并到一起```
+```
+var arr1 = [23,43,5,6,4]
+var num = 4
+var temp = [...arr1,num]//[23,43,5,6,4,4]
+-----
+var arr = {list:{a:2,b:3}}
+var temp = {...arr.list,c:4}//{a: 2, b: 3, c: 4}
+-----
+var arr = {list:{a:2,b:3,c: 4}}
+var temp = {...arr.list,c:78}//{a: 2, b: 3, c: 78}
+
+```
 ---
 #### 其它注意事项
 1. 常量大写
