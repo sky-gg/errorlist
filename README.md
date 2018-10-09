@@ -326,3 +326,13 @@ var temp = {...arr.list,c:78}//{a: 2, b: 3, c: 78}
 
 #### 时间戳
 * `new Date().getTime() === Date.new()`
+
+#### replace
+```js
+// sellerCnt => seller_cnt
+// minPriceOne=> min_price_one
+function underline(str){
+  return str.replace(/\B([A-Z])/g, '_$1').toLowerCase()
+}
+```
+* str.replace(regexp/substr,replacement) 第二个参数可以是字符串，也可以是函数、函数第一个参数接收匹配的字符 返回处理后的字符 匹配到一次调用一次这个函数
