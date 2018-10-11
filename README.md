@@ -336,3 +336,29 @@ function underline(str){
 }
 ```
 * str.replace(regexp/substr,replacement) 第二个参数可以是字符串，也可以是函数、函数第一个参数接收匹配的字符 返回处理后的字符 匹配到一次调用一次这个函数
+
+## React
+#### create-react-app 中 antd 按需加载
+```
+$ npm install -g create-react-app yarn
+$ create-react-app antd-demo
+$ cd antd-demo
+$ yarn start
+$ yarn add antd babel-plugin-import --save-dev
+$ yarn eject
+//给`package.json`中的`babel`添加如下代码：
+"babel": {
+  "presets": [
+    "react-app"
+  ],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
+      }
+    ]
+  ]
+}
+```
