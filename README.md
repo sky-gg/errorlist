@@ -1,61 +1,36 @@
 <!-- TOC -->
 
 - [try my best for a good day](#try-my-best-for-a-good-day)
-    - [Build Setup](#build-setup)
-    - [Vue](#vue)
-            - [vue-cli 常见问题](#vue-cli-常见问题)
-            - [父子组件传参 子组件修改父组件数据](#父子组件传参-子组件修改父组件数据)
-            - [新技能GET](#新技能get)
-            - [轻量级web富文本框使用需注意问题](#轻量级web富文本框使用需注意问题)
-            - [element table 表头合并](#element-table-表头合并)
-            - [element table 表头部分修改样式](#element-table-表头部分修改样式)
-            - [git上传本地项目](#git上传本地项目)
-            - [拉取仓库项目](#拉取仓库项目)
-            - [element-ui 使用常见问题](#element-ui-使用常见问题)
-            - [字符串变量拼接两种实现方式](#字符串变量拼接两种实现方式)
-            - [两个数组合并成一个](#两个数组合并成一个)
-            - [其它注意事项](#其它注意事项)
-            - [接口常见问题](#接口常见问题)
-            - [watch属性](#watch属性)
-            - [export 暴露出去](#export-暴露出去)
-            - [import 引入进来](#import-引入进来)
-            - [解构赋值](#解构赋值)
-            - [ES6函数扩展](#es6函数扩展)
-            - [箭头函数](#箭头函数)
-            - [npm](#npm)
-            - [时间戳](#时间戳)
-            - [replace](#replace)
-    - [React](#react)
-            - [create-react-app 中 antd 按需加载](#create-react-app-中-antd-按需加载)
-            - [propTypes与props的验证](#proptypes与props的验证)
+  - [Vue](#vue)
+      - [vue-cli 常见问题](#vue-cli-常见问题)
+      - [父子组件传参 子组件修改父组件数据](#父子组件传参-子组件修改父组件数据)
+      - [新技能GET](#新技能get)
+      - [轻量级web富文本框使用需注意问题](#轻量级web富文本框使用需注意问题)
+      - [element table 表头合并](#element-table-表头合并)
+      - [element table 表头部分修改样式](#element-table-表头部分修改样式)
+      - [git上传本地项目](#git上传本地项目)
+      - [拉取仓库项目](#拉取仓库项目)
+      - [element-ui 使用常见问题](#element-ui-使用常见问题)
+      - [字符串变量拼接两种实现方式](#字符串变量拼接两种实现方式)
+      - [两个数组合并成一个](#两个数组合并成一个)
+      - [其它注意事项](#其它注意事项)
+      - [接口常见问题](#接口常见问题)
+      - [watch属性](#watch属性)
+      - [export 暴露出去](#export-暴露出去)
+      - [import 引入进来](#import-引入进来)
+      - [解构赋值](#解构赋值)
+      - [ES6函数扩展](#es6函数扩展)
+      - [箭头函数](#箭头函数)
+      - [npm](#npm)
+      - [时间戳](#时间戳)
+      - [replace](#replace)
+  - [React](#react)
+      - [create-react-app 中 antd 按需加载](#create-react-app-中-antd-按需加载)
+      - [propTypes与props的验证](#proptypes与props的验证)
 
 <!-- /TOC -->
+
 # try my best for a good day
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm start
-
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
----
 ## Vue
 #### vue-cli 常见问题
 
