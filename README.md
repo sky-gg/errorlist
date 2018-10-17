@@ -366,68 +366,76 @@ $ yarn eject
 }
 ```
 #### propTypes与props的验证
-React.createClass({
-  propTypes: {
-    // 我们可以像下面这样指定 prop 为JS 原始类型
-    // 这些属性值都是可选
-    optionalArray: React.PropTypes.array,
-    optionalBool: React.PropTypes.bool,
-    optionalFunc: React.PropTypes.func,
-    optionalNumber: React.PropTypes.number,
-    optionalObject: React.PropTypes.object,
-    optionalString: React.PropTypes.string,
+```
+//我一般在组件里这么用
+import Proptypes from 'prop-types'
 
-    // React.PropTypes中提供了所有的可渲染对象的验证
-    // 这些对象包括：数字、字符串、元素、数组等
+// 数据类型限制
+TabsContent.propTypes = {
+  lists: Proptypes.array.isRequired,
+  actived: Proptypes.oneOf([0, 1, 2]).isRequired,
+  // actived: Proptypes.number.isRequired,
+}
+```
+```
+// 我们可以像下面这样指定 prop 为JS 原始类型
+// 这些属性值都是可选
+optionalArray: React.PropTypes.array,
+optionalBool: React.PropTypes.bool,
+optionalFunc: React.PropTypes.func,
+optionalNumber: React.PropTypes.number,
+optionalObject: React.PropTypes.object,
+optionalString: React.PropTypes.string,
 
-    // 节点判断
-    optionalNode: React.PropTypes.node,
+// React.PropTypes中提供了所有的可渲染对象的验证
+// 这些对象包括：数字、字符串、元素、数组等
 
-    // React元素判断
-    optionalElement: React.PropTypes.element,
+// 节点判断
+optionalNode: React.PropTypes.node,
 
-    // prop 可以定义为一个类的实例
-    // 判断为类实例使用JS的instanceOf 操作符判断
-    optionalMessage: React.PropTypes.instanceOf(Message),
+// React元素判断
+optionalElement: React.PropTypes.element,
 
-    // prop 可以像枚举一样，指定输入范围
-    optionalEnum: React.PropTypes.oneOf(['News', 'Photos']),
+// prop 可以定义为一个类的实例
+// 判断为类实例使用JS的instanceOf 操作符判断
+optionalMessage: React.PropTypes.instanceOf(Message),
 
-    // 也可以指定为多个类型中的一个
-    optionalUnion: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.number,
-      React.PropTypes.instanceOf(Message)
-    ]),
+// prop 可以像枚举一样，指定输入范围
+optionalEnum: React.PropTypes.oneOf(['News', 'Photos']),
 
-    // 指定类型的数组
-    optionalArrayOf: React.PropTypes.arrayOf(React.PropTypes.number),
+// 也可以指定为多个类型中的一个
+optionalUnion: React.PropTypes.oneOfType([
+  React.PropTypes.string,
+  React.PropTypes.number,
+  React.PropTypes.instanceOf(Message)
+]),
 
-    // 指定对象属性值的类型
-    optionalObjectOf: React.PropTypes.objectOf(React.PropTypes.number),
+// 指定类型的数组
+optionalArrayOf: React.PropTypes.arrayOf(React.PropTypes.number),
 
-    // shape 指定传入对象属性名及值类型
-    optionalObjectWithShape: React.PropTypes.shape({
-      color: React.PropTypes.string,
-      fontSize: React.PropTypes.number
-    }),
+// 指定对象属性值的类型
+optionalObjectOf: React.PropTypes.objectOf(React.PropTypes.number),
 
-    // 所有类型都可以增加 'isRequired' 来限制prop不可为空
-    requiredFunc: React.PropTypes.func.isRequired,
+// shape 指定传入对象属性名及值类型
+optionalObjectWithShape: React.PropTypes.shape({
+  color: React.PropTypes.string,
+  fontSize: React.PropTypes.number
+}),
 
-    // 可以同时使用'any'指定任何不可为空的任意类型
-    requiredAny: React.PropTypes.any.isRequired,
+// 所有类型都可以增加 'isRequired' 来限制prop不可为空
+requiredFunc: React.PropTypes.func.isRequired,
 
-    // 'element' 可以用于限定单个子组件
-    children: React.PropTypes.element.isRequired
+// 可以同时使用'any'指定任何不可为空的任意类型
+requiredAny: React.PropTypes.any.isRequired,
 
-    // propTypes 支持使用自定义的验证器。
-    // 自定义验证，失败时要返回一个 Error 对象，不能直接使用`console.warn`
-    customProp: function(props, propName, componentName) {
-      if (!/matchme/.test(props[propName])) {
-        return new Error('Validation failed!');
-      }
-    }
-  },
-  /* ... */
-});
+// 'element' 可以用于限定单个子组件
+children: React.PropTypes.element.isRequired
+
+// propTypes 支持使用自定义的验证器。
+// 自定义验证，失败时要返回一个 Error 对象，不能直接使用`console.warn`
+customProp: function(props, propName, componentName) {
+  if (!/matchme/.test(props[propName])) {
+    return new Error('Validation failed!');
+  }
+}
+```
