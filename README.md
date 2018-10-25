@@ -27,7 +27,7 @@
   - [React](#react)
       - [create-react-app 中 antd 按需加载](#create-react-app-中-antd-按需加载)
       - [propTypes与props的验证](#proptypes与props的验证)
-
+      - [deg](#deg)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -447,3 +447,5 @@ customProp: function(props, propName, componentName) {
   }
 }
 ```
+#### deg
+`debugger` 打断点 写在代码任意处
