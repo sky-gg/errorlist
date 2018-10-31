@@ -27,7 +27,9 @@
   - [React](#react)
       - [create-react-app 中 antd 按需加载](#create-react-app-中-antd-按需加载)
       - [propTypes与props的验证](#proptypes与props的验证)
+  - [杂项](#杂项) 
       - [deg](#deg)
+      - [htree windows生成目录树](#htree)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -447,5 +449,8 @@ customProp: function(props, propName, componentName) {
   }
 }
 ```
+## 杂项
 #### deg
-`debugger` 打断点 写在代码任意处
+ `debugger` 打断点 写在代码任意处
+#### htree windows生成目录树
+ `htree -i node_modules --output file.md`
