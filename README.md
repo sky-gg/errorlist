@@ -456,7 +456,7 @@ customProp: function(props, propName, componentName) {
 #### htree windows生成目录树
  `htree -i node_modules --output file.md`
 #### 空数组转换
- `
+ ```
  if([]){
   console.log(1)
  }else{
@@ -474,4 +474,4 @@ customProp: function(props, propName, componentName) {
  //Number([]) => 0
  //Number(true) => 1
  //吃鲸
- `
+ ```
