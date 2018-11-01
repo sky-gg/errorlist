@@ -30,6 +30,7 @@
   - [杂项](#杂项) 
       - [deg](#deg)
       - [htree windows生成目录树](#htree-windows生成目录树)
+      - [空数组转换](#空数组转换)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -454,3 +455,23 @@ customProp: function(props, propName, componentName) {
  `debugger` 打断点 写在代码任意处
 #### htree windows生成目录树
  `htree -i node_modules --output file.md`
+#### 空数组转换
+ `
+ if([]){
+  console.log(1)
+ }else{
+  console.log(2)
+ }
+ //输出1
+ //Boolean([]) => true
+//Boolean({}) => true
+-------------
+ if([]===true){
+  console.log(1)
+ }else{
+  console.log(2)
+ }//输出2
+ //Number([]) => 0
+ //Number(true) => 1
+ //吃鲸
+ `
