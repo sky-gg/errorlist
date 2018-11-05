@@ -475,3 +475,8 @@ customProp: function(props, propName, componentName) {
  //Number(true) => 1
  //吃鲸
  ```
+ #### 运行本地node包
+ ```
+ 	"wdser": "node node_modules\\fis3\\bin\\fis.js server start --root ./output",
+
+ ```
