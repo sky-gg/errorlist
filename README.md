@@ -132,7 +132,7 @@
 1. 不知宽高的物体左右居中（ios独特的bug解决方案）
 ```
   left:50%;
-  transform:translate(50%,0)
+  transform:translate(-50%,0)
 ```
 
 2. 剩余空间自动分配
