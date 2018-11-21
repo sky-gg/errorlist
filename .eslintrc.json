@@ -1,31 +1,52 @@
 {
-    "env": {
+    "root":true,//根目录
+    "env": {//环境，js语法
         "browser": true,
         "node": true,
         "es6": true
     },
-    "extends": [
+    "extends": [//规则继承
         "eslint:recommended",
         "plugin:react/recommended"
     ],
-    "parserOptions": {
+    "parserOptions": {//语法检测
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
             "jsx": true
         },
         "sourceType": "module"
     },
-    "parser": "babel-eslint",
-    "rules": {
-        "indent": [
+    "parser": "babel-eslint",//解析器
+    "rules": {//校验规则
+    /*
+        0：off
+        1：warn
+        2：error
+    */
+    //禁用代码检测
+        /* eslint-disable */
+        /* eslint-disable no-alert*/
+        // eslint-disable-line
+        //eslint-disable-line no-alert
+        // eslint-disable-next-line no-alert
+        "indent": [//缩进
             "error",
             2
         ],
-        "quotes": [
+        "quotes": [//单双引号
             "error",
             "single"
         ],
-        "react/prop-types": "0",
-        "react/display-name": "0"
+        "eqeqeq": ["error", "always"],//全等
+        "react/prop-types": "0",//react 默认值类型校验
+        "react/display-name": "0",//忘记了
+        "no-console": 1,//禁止console
+        "no-alert": 1,//禁止alert
+        "no-empty": 2,//禁止空的语句块
+        "no-unused-vars":2,//禁止声明变量后不使用
+
+    },
+     "globals": {
+        "xhrLog": true
     }
 }
