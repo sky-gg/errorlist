@@ -199,6 +199,12 @@
 5.	`git commit -m "描述" `添加至本地版本库
 6.	`git remote add origin url`[url为你github上仓库的地址]
 7.	`git push origin master` 推送至远程版本库
+
+---
+命令行提交 
+初次提交使用 `git push --set-upstream origin test` test=>远程分支
+之后提交使用 `git push origin`
+
 ---
 8.  git branch -a 查看远程分支<br/>
 采用下图方式可以省去1.2两步<br/>
