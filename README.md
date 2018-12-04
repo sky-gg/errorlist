@@ -199,16 +199,35 @@
 5.	`git commit -m "描述" `添加至本地版本库
 6.	`git remote add origin url`[url为你github上仓库的地址]
 7.	`git push origin master` 推送至远程版本库
-
----
-命令行提交 
-初次提交使用 `git push --set-upstream origin test` test=>远程分支
-之后提交使用 `git push origin`
-
----
 8.  git branch -a 查看远程分支<br/>
 采用下图方式可以省去1.2两步<br/>
 ![dd](src/assets/img/a.png)
+---
+
+```
+首次提交：
+git push --set-upstream origin <name> （name 远程分支名）
+以后提交：
+git push origin
+
+查看本地分支：
+git branch <name>（name 本地分支名）
+
+查看远程分支：
+git branch -a
+
+切换本地分支：
+git checkout <name>（name 本地分支名）
+
+分支合并（当前在master分支，把本地的dev分支合并到当前分支）
+git merge dev
+
+创建+切换分支：
+git checkout -b <name>
+
+删除分支：（切换到其他分支然后删除）
+git branch -d <name>
+```
 ---
 #### 拉取仓库项目
 1. 推荐使用sourcetree，傻瓜式操作。
