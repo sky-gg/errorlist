@@ -31,6 +31,7 @@
       - [deg](#deg)
       - [htree windows生成目录树](#htree-windows生成目录树)
       - [空数组转换](#空数组转换)
+      - [isoinput默认样式](#isoinput默认样式)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -505,3 +506,5 @@ customProp: function(props, propName, componentName) {
  	"wdser": "node node_modules\\fis3\\bin\\fis.js server start --root ./output",
 
  ```
+#### isoinput默认样式
+* ios input 使用 disabled 禁用时会存在默认样式，将disabled换成readonly可解决此问题
