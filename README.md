@@ -507,4 +507,4 @@ customProp: function(props, propName, componentName) {
 
  ```
 #### isoinput默认样式
-* ios input 使用 disabled 禁用时会存在默认样式，将disabled换成readonly可解决此问题
+* ios中使用 disabled 禁用input框时会存在默认样式，将disabled换成readonly可解决此问题
