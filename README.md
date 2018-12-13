@@ -364,9 +364,13 @@ var temp = {...arr.list,c:78}//{a: 2, b: 3, c: 78}
 * 查看已安装全局包 `npm list -g --depth 0`
 * nrm 切换npm包源 使用方式：`nrm ls`(查看所有源) `npm use cnpm`(使用淘宝源)
 * nvm 切换node版本 使用方式：`nrm ls`(查看已安装的node版本) `nrm use 4.4.4`(使用node4.4.4)
+#### 运行本地node包
+ ```
+ 	"wdser": "node node_modules\\fis3\\bin\\fis.js server start --root ./output",
 
+ ```
 #### 时间戳
-* `new Date().getTime() === Date.new()`
+* `new Date().getTime() === Date.now()`
 
 #### replace
 ```js
@@ -502,11 +506,7 @@ customProp: function(props, propName, componentName) {
  //Number(true) => 1
  //吃鲸
  ```
- #### 运行本地node包
- ```
- 	"wdser": "node node_modules\\fis3\\bin\\fis.js server start --root ./output",
-
- ```
+ 
  #### isoinput默认样式
   * ios中使用 disabled 禁用input框时会存在默认样式，将disabled换成readonly可解决此问题
  #### console
