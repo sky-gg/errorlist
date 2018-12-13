@@ -32,6 +32,7 @@
       - [htree windows生成目录树](#htree-windows生成目录树)
       - [空数组转换](#空数组转换)
       - [isoinput默认样式](#isoinput默认样式)
+      - [console](#console)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -506,5 +507,20 @@ customProp: function(props, propName, componentName) {
  	"wdser": "node node_modules\\fis3\\bin\\fis.js server start --root ./output",
 
  ```
-#### isoinput默认样式
-* ios中使用 disabled 禁用input框时会存在默认样式，将disabled换成readonly可解决此问题
+ #### isoinput默认样式
+  * ios中使用 disabled 禁用input框时会存在默认样式，将disabled换成readonly可解决此问题
+ #### console
+  * console.table(Obj) 遍历对象值并打印
+  * console.log()
+  * console.dir(Obj)
+  * console.info()
+  * console.error() 报错
+  * console.warn() 警告
+  * console.time(String) 开始计时
+  * console.timeEnd(String) 结束计时
+  * console.log('%c哈哈','font-size:100px;color:red') 输出样式
+  * Ctrl + l / console.clear() 清空控制台
+  * 字符（%s）、整数（%d或%i）、浮点数（%f）和对象（%o） //console.log('我叫%s,今年%d岁了,身高%f米','小明',8,1.2)
+  * console.count()想统计代码被执行的次数
+  * keys(Obj)/values(Obj) 输出对象的键与值
+  * $_命令返回最近一次表达式执行的结果
