@@ -531,7 +531,7 @@ customProp: function(props, propName, componentName) {
 * Ctrl + u                //查看源码
 * Ctrl + [ / ]            //左右括号切换面板
 * Ctrl + Shift + j        //打开控制台
-* Ctrl + Shift + e        //打开元素面板
+* Ctrl + Shift + c        //打开元素面板
 * Ctrl + Shift + m        //切换模式 移动/网页
 * Ctrl + Shift + p        //打开命令面板
 * Ctrl + Shift + d        //调整调试器布局
