@@ -33,6 +33,7 @@
       - [空数组转换](#空数组转换)
       - [isoinput默认样式](#isoinput默认样式)
       - [console](#console)
+      - [Chrome调试器常用快捷键](#Chrome调试器常用快捷键)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -524,3 +525,22 @@ customProp: function(props, propName, componentName) {
   * console.count()想统计代码被执行的次数
   * keys(Obj)/values(Obj) 输出对象的键与值
   * $_命令返回最近一次表达式执行的结果
+#### Chrome调试器常用快捷键
+```
+* Ctrl + Shift + i = f12  //打开调试器
+* Ctrl + u                //查看源码
+* Ctrl + [ / ]            //左右括号切换面板
+* Ctrl + Shift + j        //打开控制台
+* Ctrl + Shift + e        //打开元素面板
+* Ctrl + Shift + m        //切换模式 移动/网页
+* Ctrl + Shift + p        //打开命令面板
+* Ctrl + Shift + d        //调整调试器布局
+* Ctrl + Shift + f        //全局查找
+* Ctrl + f                //当前页查找
+* 元素面板中元素属性
+  * Ctrl + 上下方向键       //100为单位调节大小
+  * Shift + 上下方向键      //10为单位调节大小
+  * Alt + 上下方向键        //0.1为单位调节大小
+
+```
+[完整版](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
