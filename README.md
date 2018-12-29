@@ -34,6 +34,7 @@
       - [isoinput默认样式](#isoinput默认样式)
       - [console](#console)
       - [Chrome调试器常用快捷键](#Chrome调试器常用快捷键)
+      - [vsc插件](#vsc插件)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -544,3 +545,19 @@ customProp: function(props, propName, componentName) {
 
 ```
 [完整版](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
+#### vsc插件
+* background
+* Beautify
+* Chinese (Simplified) Language Pack for Visual Studio Code
+* EditorConfig for VS Code
+* ES7 React/Redux/GraphQL/React-Native snippets
+* ESLint
+* GitLens — Git supercharged
+* Markdown All in One
+* Markdown TOC
+* open in browser
+* React Native Tools
+* Vetur
+* vscode-icons
+* Vue 2 Snippets
+
