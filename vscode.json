@@ -1,0 +1,70 @@
+{
+    // 用户配置
+    //"background.enabled": false,//卸载插件开启
+    "background.useDefault": false,
+    "background.style": {
+        "content": "''",
+        "pointer-events": "none",
+        "position": "absolute",
+        "z-index": "99999",
+        "width": "200px",
+        "height": "200px",
+        "background-size": "cover",
+        "background-repeat": "no-repeat",
+        "opacity": 0.3,
+        "right": "50px",
+        "bottom": 0
+    },
+    "background.customImages": [
+        "file:///C:/Users/wangyongliang/Pictures/Camera Roll/比心.png",
+    ],
+    "editor.tabSize": 2, //tab两个字符
+    "eslint.options": {
+        "extensions": [
+            ".js",
+            ".vue"
+        ]
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "js",
+            "autoFix": true
+        },
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        "html",
+        "vue"
+    ],
+    // // 启用后，按下 TAB 键，将展开 Emmet 缩写。
+    "emmet.triggerExpansionOnTab": true,
+    // 在默认不支持 Emmet 的语言中启用 Emmet 缩写功能。在此添加该语言与受支持的语言间的映射。
+    // 示例: `{"vue-html": "html", "javascript": "javascriptreact"}`
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "explorer.confirmDelete": false,
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.minimap.enabled": true,
+    "workbench.statusBar.feedback.visible": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Source Code Pro, Consolas, 'Courier New', monospace",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "update.channel": "none",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "extensions.ignoreRecommendations": false,
+    "eslint.autoFixOnSave": true,
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+}
