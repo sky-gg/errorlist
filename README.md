@@ -365,8 +365,8 @@ var temp = {...arr.list,c:78}//{a: 2, b: 3, c: 78}
 ```
 #### npm
 * 查看已安装全局包 `npm list -g --depth 0`
-* nrm 切换npm包源 使用方式：`nrm ls`(查看所有源) `npm use cnpm`(使用淘宝源)
-* nvm 切换node版本 使用方式：`nrm ls`(查看已安装的node版本) `nrm use 4.4.4`(使用node4.4.4)
+* nrm 切换npm包源 使用方式：`nrm ls`(查看所有源) `nrm use cnpm`(使用淘宝源)
+* nvm 切换node版本 使用方式：`nvm ls`(查看已安装的node版本) `nvm use 4.4.4`(使用node4.4.4)
 #### 运行本地node包
  ```
  	"wdser": "node node_modules\\fis3\\bin\\fis.js server start --root ./output",
@@ -489,7 +489,7 @@ customProp: function(props, propName, componentName) {
  `debugger` 打断点 写在代码任意处
 #### htree windows生成目录树
  `htree -i node_modules --output file.md`
-#### 空数组转换
+#### 空数组转换(接口返回数组时需特别注意)
  ```
  if([]){
   console.log(1)
