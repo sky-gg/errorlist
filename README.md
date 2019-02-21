@@ -159,6 +159,20 @@
 3. ios input框禁用后出现默认样式
   3.1 解决方法：
         将disabled更换成readonly :readonly = 'flag'
+  3.2 修改readonly样式
+      ```css
+        input[readOnly] {
+          background: red;
+        }
+      ```
+      ```
+      <input
+            :readonly="flag ? true : false"
+            type="button"
+            value="+"
+            @click="numAdd"
+          />
+      ```
 
 
 ---
