@@ -36,6 +36,7 @@
       - [Chrome调试器常用快捷键](#Chrome调试器常用快捷键)
       - [vsc插件](#vsc插件)
       - [label,input对齐](#label,input对齐)
+      - [添加背景图注意事项](#添加背景图注意事项)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -578,3 +579,13 @@ customProp: function(props, propName, componentName) {
 #### label,input对齐
 ![如图所示](src/assets/img/b.png)
 * 思路：给label宽度，改为行内元素，文字右对齐；input设置`vertical-align: text-bottom;`相对于label文字上下对齐；包裹label与input的容器设置文字居中。
+#### 添加背景图注意事项
+```scss
+//以下属性尽可能写全
+  .logo {
+    background-image: url('https://b-gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+```  
