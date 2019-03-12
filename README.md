@@ -37,6 +37,7 @@
       - [vsc插件](#vsc插件)
       - [label,input对齐](#label,input对齐)
       - [添加背景图注意事项](#添加背景图注意事项)
+      - [引入图片](#引入图片)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -588,4 +589,11 @@ customProp: function(props, propName, componentName) {
     background-size: 100%;
     background-repeat: no-repeat;
   }
-```  
+```
+#### 引入图片
+```
+<img
+  :src="require(`@assets/img/${item.num}.png`)"
+  alt="连续的图片"
+>
+```
