@@ -16,11 +16,11 @@
     "bottom": 0
   },
   "background.customImages": [
-    "file:///C:/Users/aiyouwei/Pictures/Camera Roll/比心.png"
+    "file:///C:/Users/wangyongliang/Pictures/Camera Roll/比心.png"
   ],
   "editor.tabSize": 2, //tab两个字符
   "eslint.options": {
-    "extensions": [".js", ".vue"]
+    "extensions": [".js", ".vue"],
   },
   "eslint.validate": [
     "javascript",
@@ -36,6 +36,9 @@
     "html",
     "vue"
   ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
   // // 启用后，按下 TAB 键，将展开 Emmet 缩写。
   "emmet.triggerExpansionOnTab": true,
   // 在默认不支持 Emmet 的语言中启用 Emmet 缩写功能。在此添加该语言与受支持的语言间的映射。
@@ -65,5 +68,11 @@
   "vetur.format.defaultFormatter.html": "js-beautify-html",
   "update.enableWindowsBackgroundUpdates": false,
   "update.showReleaseNotes": false,
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe" // 这里是我电脑上bash.exe的路径
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.rendererType": "dom",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // 这里是我电脑上bash.exe的路径
+  // 定义匿名函数的函数关键字后面的空格处理。
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
 }
