@@ -38,6 +38,7 @@
       - [label,input对齐](#label,input对齐)
       - [添加背景图注意事项](#添加背景图注意事项)
       - [引入图片](#引入图片)
+      - [前端维护旧项目注意事项](#前端维护旧项目注意事项)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -597,3 +598,7 @@ customProp: function(props, propName, componentName) {
   alt="连续的图片"
 >
 ```
+#### 前端维护旧项目注意事项
+* node版本（使用nvm切换）
+* JavaScript版本（es5还是es6）
+* 程序运行命令（mac和windows可能会不一样）
