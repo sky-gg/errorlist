@@ -39,6 +39,7 @@
       - [添加背景图注意事项](#添加背景图注意事项)
       - [引入图片](#引入图片)
       - [前端维护旧项目注意事项](#前端维护旧项目注意事项)
+      - [查看npm全局包所在位置](#查看npm全局包所在位置)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -602,3 +603,6 @@ customProp: function(props, propName, componentName) {
 * node版本（使用nvm切换）
 * JavaScript版本（es5还是es6）
 * 程序运行命令（mac和windows可能会不一样）
+
+#### 查看npm全局包所在位置
+`npm config get prefix`
