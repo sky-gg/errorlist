@@ -606,3 +606,8 @@ customProp: function(props, propName, componentName) {
 
 #### 查看npm全局包所在位置
 `npm config get prefix`
+#### sort方法遇到的坑
+```
+arr.sort(function(a,b){return a>b?-1:1})
+```
+sort根据返回的值排序，返回值有三种：0（不是所有浏览器都会保持a,b位置不变），-1,1,尽量让返回值是正负一，来保证排序不会错。
