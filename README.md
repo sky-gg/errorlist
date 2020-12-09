@@ -579,6 +579,7 @@ customProp: function(props, propName, componentName) {
 * Vetur
 * vscode-icons
 * Vue 2 Snippets
+* https://chrome.google.com/webstore/detail/svg-grabber-get-all-the-s/ndakggdliegnegeclmfgodmgemdokdmg/related
 #### label,input对齐
 ![如图所示](src/assets/img/b.png)
 * 思路：给label宽度，改为行内元素，文字右对齐；input设置`vertical-align: text-bottom;`相对于label文字上下对齐；包裹label与input的容器设置文字居中。
