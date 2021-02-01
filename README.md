@@ -40,6 +40,7 @@
       - [引入图片](#引入图片)
       - [前端维护旧项目注意事项](#前端维护旧项目注意事项)
       - [查看npm全局包所在位置](#查看npm全局包所在位置)
+      - [安卓打开chrome调试](#安卓打开Chrome调试)
 <!-- /TOC -->
 
 # try my best for a good day
@@ -612,3 +613,5 @@ customProp: function(props, propName, componentName) {
 arr.sort(function(a,b){return a>b?-1:1})
 ```
 sort根据返回的值排序，返回值有三种：0（不是所有浏览器都会保持a,b位置不变），-1,1,尽量让返回值是正负一，来保证排序不会错。
+#### 安卓打开Chrome调试
+`setWebContentsDebuggingEnabled(true)`
