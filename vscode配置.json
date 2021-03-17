@@ -1,6 +1,7 @@
 { // VScode主题配置
     "editor.tabSize": 2,
     "editor.lineHeight": 24,
+    "editor.wordWrap":"on",
     "editor.renderLineHighlight": "none",
     "editor.renderWhitespace": "none",
     "editor.fontFamily": "Consolas",
