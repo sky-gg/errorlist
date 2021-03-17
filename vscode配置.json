@@ -11,7 +11,7 @@
     "editor.formatOnSave": false,
     "editor.snippetSuggestions": "top",
     "editor.wordWrapColumn": 200,
-    "editor.wordWrap": "off",
+    "editor.hover.delay": 1200,
     "editor.quickSuggestions": {
         "other": true,
         "comments": true,
